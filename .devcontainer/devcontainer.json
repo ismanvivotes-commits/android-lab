@@ -1,0 +1,16 @@
+{
+  "name": "Android Lab",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu-22.04",
+  "hostRequirements": {"cpus": 2, "memory": "8gb"},
+  "features": {
+    "ghcr.io/devcontainers/features/java:1": {"version": "17"},
+    "ghcr.io/devcontainers/features/node:1": {"version": "20"},
+    "ghcr.io/devcontainers/features/github-cli:1": {}
+  },
+  "postCreateCommand": "bash .devcontainer/setup.sh",
+  "customizations": {
+    "vscode": {
+      "extensions": ["redhat.java","vscjava.vscode-java-pack"]
+    }
+  }
+}
